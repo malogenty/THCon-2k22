@@ -1,0 +1,13 @@
+The goal of this challenge is to bypass an check with the flag from user input and an flag stored in a file
+Here is the check:
+
+```php
+ if (strlen($_POST['flag']) != strlen($flag))
+```
+
+We can observe that the $_POST['flag'] is not sanitized and verified first.
+An HTTP POST or GET variable can also be an array using this syntax: flag[1]=a
+We can crash with that the page and get the flag in the error message using this command:
+```bash
+curl http://challenges1.thcon.party:529/ -X POST --data 'flag[1]=a'
+```
