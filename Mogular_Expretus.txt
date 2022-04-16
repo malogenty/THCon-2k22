@@ -1,0 +1,8 @@
+My first attempt to the challenge was to see that every matches we have to make has an number to its end
+So our regex will finish with this: "\d"
+Then we can recognize that the start is always by either an letter or the character '-'
+And not the 'z' and 'y' letter
+So we can specify it: "[a-x-]\d"
+
+But we need to take care of another thing the fact that we can have one and only one '!' in the middle of the string
+So we specify it: "[a-x-]!?\d" and got the flag: "THCon22{Solence&SarahBarrios-COLD}"
