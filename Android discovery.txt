@@ -1,0 +1,4 @@
+We can decompile the apk using: http://www.javadecompilers.com/apk
+
+Then we can found the flag in the file "sources/party/thcon/y2022/discovery/MainActivity.java"
+In the function "showAlertDialog"
